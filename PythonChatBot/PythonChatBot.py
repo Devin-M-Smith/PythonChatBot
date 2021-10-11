@@ -3,5 +3,5 @@ def central():
     print(x)
 
 
-print("Welcome to PyChat.")
+print("Welcome to PyChat! \nPlease see Readme.md for important updates and features.")
 central()

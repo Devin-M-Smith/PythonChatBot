@@ -1,6 +1,9 @@
+
+import wordHandler as w
 def central():
     
     x = input("Hello \nYou: ")
+    x = w.fixIt(x)
     while x.lower() != "shutdown":
         print("You said: " + x)
         x = input("You: ")

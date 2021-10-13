@@ -1,13 +1,15 @@
-import wordHandler as wh
+from wordHandler import fixIt
+from time import sleep
 def central():
-    
-    x = input("Hello \nYou: ")
-    x = wh.fixIt(x)
+    x = ""
     while x != "shutdown":
-        print("You said: " + x)
         x = input("You: ")
-        x = wh.fixIt(x)
+        x = fixIt(x)
+        print("You said: " + x)
+
+    print("Shutting down")
+        
 
 
-print("Welcome to PyChat! \nPlease see Readme.md for important updates and features.")
+print("Welcome to PyChat! \nPlease see Readme.md for important updates and features. \nHello!")
 central()
